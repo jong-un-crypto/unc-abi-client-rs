@@ -1,0 +1,8 @@
+[workspace]
+resolver = "2"
+members = [
+    "unc-abi-client",
+    "unc-abi-client-impl",
+    "unc-abi-client-macros",
+    "examples/*",
+]

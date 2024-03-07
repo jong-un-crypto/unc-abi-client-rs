@@ -1,0 +1,13 @@
+[package]
+publish = false
+name = "delegator-macro"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+near-workspaces = "0.10.0"
+unc-abi-client = { path = "../../unc-abi-client", version = "0.1.1" }
+
+[dev-dependencies]
+tokio = { version = "1.14", features = ["full"] }
