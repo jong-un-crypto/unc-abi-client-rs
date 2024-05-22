@@ -23,6 +23,7 @@
 ## Usage
 
 This crate supports two sets of APIs for users with different needs:
+
 * **Macro-driven**. Gives you a client in a single macro invocation.
 * **Generation-based**. Gives you more control and is transparent about what code you end up using, but requires more setup.
 
@@ -66,7 +67,7 @@ fn main() -> anyhow::Result<()> {
 
 The resulting file, however, is not included in your source set by itself. You have to include it manually; the recommended way is to create a mod with a custom path:
 
-```
+```rs
 #[path = "path/to/out/dir/abi.rs"]
 mod mymod;
 ```

@@ -1,12 +1,12 @@
 [package]
 name = "unc-abi-client-impl"
-version = "0.1.0"
+version = "0.10.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
-repository = "https://github.com/near/unc-abi-client-rs"
+repository = "https://github.com/utnet-org/unc-abi-client-rs"
 description = """
-Library to generate Rust clients for NEAR smart contracts.
+Library to generate Rust clients for Utility smart contracts.
 """
 
 [dependencies]
@@ -17,4 +17,4 @@ serde_json = "1.0"
 proc-macro2 = "1.0"
 near_schemafy_lib = "0.7"
 
-unc-abi = "0.1.0"
+unc-abi = "0.10.2"
