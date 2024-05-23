@@ -41,7 +41,7 @@ mod mymod {
 
 Placing the macro invocation inside a `mod` section is optional, but helps reducing unexpected behaviors such as name clashes.
 
-Now, assuming you have a `contract: near_workspaces::Contract` deployed, you can make a call like this:
+Now, assuming you have a `contract: utility_workspaces::Contract` deployed, you can make a call like this:
 
 ```rust
 let contract = mymod::ClientName { contract };
@@ -72,7 +72,7 @@ The resulting file, however, is not included in your source set by itself. You h
 mod mymod;
 ```
 
-Now, assuming you have a `contract: near_workspaces::Contract` deployed, you can make a call like this:
+Now, assuming you have a `contract: utility_workspaces::Contract` deployed, you can make a call like this:
 
 ```rust
 let contract = mymod::AbiClient { contract };

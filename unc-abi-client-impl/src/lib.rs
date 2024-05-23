@@ -15,7 +15,7 @@ pub fn generate_abi_client(
 
     token_stream.extend(quote! {
         pub struct #contract_name {
-            pub contract: near_workspaces::Contract,
+            pub contract: utility_workspaces::Contract,
         }
     });
 
@@ -70,8 +70,8 @@ pub fn generate_abi_client(
             methods_stream.extend(quote! {
                 pub async fn #name(
                     &self,
-                    gas: near_workspaces::types::Gas,
-                    deposit: near_workspaces::types::Balance,
+                    gas: utility_workspaces::types::Gas,
+                    deposit: utility_workspaces::types::Balance,
                     #(#params),*
                 ) -> anyhow::Result<#return_type> {
                     let result = self.contract

@@ -1,6 +1,6 @@
 [package]
 name = "unc-abi-client"
-version = "0.10.0"
+version = "0.10.1"
 edition = "2021"
 rust-version = "1.75.0"
 license = "MIT OR Apache-2.0"
@@ -17,8 +17,8 @@ anyhow = "1.0"
 convert_case = "0.5"
 prettyplease = "0.1"
 
-unc-abi-client-impl = { path = "../unc-abi-client-impl", version = "0.10.0" }
-unc-abi-client-macros = { path = "../unc-abi-client-macros", version = "0.10.0" }
+unc-abi-client-impl = { path = "../unc-abi-client-impl", version = "0.10.1" }
+unc-abi-client-macros = { path = "../unc-abi-client-macros", version = "0.10.1" }
 
 [dev-dependencies]
 tempfile = "3"
